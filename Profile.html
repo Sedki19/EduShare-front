@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EduShare</title>
+    <link rel="stylesheet" type="text/css" href="main5.css">
+</head>
+
+<body>
+    <header>
+        <h1>EduShare</h1>
+        <img src="logo.png" class="ast">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Acceuil.html">Acceuil</a></li>
+            <li><a href="Recherche.html">Recherche</a></li>
+            <li><a href="Publication.html">Publication</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="product-form">
+        <div class="profile-header">
+            <img src="user_profile.png" alt="Photo de profil" class="profile-photo">
+        </div>
+        <div class="profile-content">
+            <div class="profile-publications">
+                <h2>Historique des Publications</h2>
+                <ul>
+                    <li>
+                        <span>Pub 1</span>
+                        <button onclick="consulterPublication(1)">Consulter</button>
+                    </li>
+                    <li>
+                        <span>Pub 2</span>
+                        <button onclick="consulterPublication(2)">Consulter</button>
+                    </li>
+                    <li>
+                        <span>Pub 3</span>
+                        <button onclick="consulterPublication(3)">Consulter</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-bio">
+                <h2>Bio</h2>
+                <p>biographie de l'utilisateur</p>
+            </div>
+        </div>
+        <button type="submit" onclick="editerp()">Editer Profile</button>
+
+    </div>
+    </main>
+    <footer>
+        <span id="cc">&copy; 5aliha aala allah</span>
+    </footer>
+
+    <script>
+        function consulterPublication(id) {
+            // Redirige l'utilisateur vers la page de consultation de la publication
+            window.location.href = 'publication.html?id=' + id;
+        }
+
+        function editerp(){
+            window.location.href = 'Profile2.html';
+
+        }
+    </script>
+</body>
+
+</html>

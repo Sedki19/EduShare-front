@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EduShare</title>
+    <link rel="stylesheet" type="text/css" href="main5.css">
+</head>
+
+<body>
+    <header>
+        <h1>EduShare</h1>
+        <img src="logo.png" class="ast">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Acceuil.html">Acceuil</a></li>
+            <li><a href="Recherche.html">Recherche</a></li>
+            <li><a href="Publication.html">Publication</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="product-form">
+            <center><h2>Mon Profil</h2></center>
+            <form method="post" action="profileaction.php">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" value="Mortadha" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="mortadhajouini@gmail.com" required>
+                
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="5">Description</textarea>
+                
+                <label for="photo">Photo de Profil:</label>
+                <input type="file" id="photo" name="photo">
+                
+                <button type="submit">Enregistrer les modifications</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span id="cc">&copy; 5aliha aala allah</span>
+    </footer>
+</body>
+
+</html>

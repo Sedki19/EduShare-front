@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier un Post - EduShare</title>
+    <link rel="stylesheet" type="text/css" href="main5.css">
+    <script src="everything.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>EduShare</h1>
+        <img src="logo.png" class="ast">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Acceuil.html">Acceuil</a></li>
+            <li><a href="Recherche.html">Recherche</a></li>
+            <li><a href="Publication.html">Publication</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="product-form">
+            <center>
+                <h2>Publier un Post</h2>
+            </center>
+            <form method="post" action="#">
+                <label for="titre"></label>
+                <input type="text" id="titre" name="titre" placeholder="Titre du Post:" required>
+
+                <label for="desc"></label>
+                <textarea id="desc" name="desc" rows="4" placeholder="Description:" required></textarea>
+
+                <label for="Class"></label>
+                <input type="text" id="class" name="class" placeholder="Class:" required>
+                <label for="level"></label>
+                <input type="level" id="level" name="level" placeholder="Level:" required>
+                <label for="Subject"></label>
+                <input type="Subject" id="Subject" name="Subject" placeholder="Subject:" required>
+                <label for="fichier"></label>
+                <input type="file" id="fichier" name="fichier" placeholder="Ajouter un fichier (optionnel):">
+
+                <button id="sub" type="submit">Publier</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span id="cc">&copy; 5aliha aala allah</span>
+    </footer>
+</body>
+
+</html>
